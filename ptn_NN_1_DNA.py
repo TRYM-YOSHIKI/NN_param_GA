@@ -112,7 +112,7 @@ def evalate(dna_1, dna_2, dna_3, dna_4, dna_5, dna_6, dna_7, dna_8, dna_9):
     for count, dna in enumerate(dna_lst):
         for i in range(4):
             #訓練データとテストデータを設定
-            if i != 3:
+            if i != 3 or i != 0:
                 train = data[(data[7] >= train_scope[i][0]) | (data[7] <= train_scope[i][1])]
                 test = data[(data[7] >= test_scope[i][0]) & (data[7] <= test_scope[i][1])]
             else:
